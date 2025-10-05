@@ -1,0 +1,9 @@
+body {
+    background-color: moccasin;
+}
+#title {
+    font-size:large;
+}
+.desc {
+    color: gray;
+}
