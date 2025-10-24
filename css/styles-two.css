@@ -1,10 +1,4 @@
-#body-two {
-    background: linear-gradient(176deg, rgb(231, 235, 6) 50%, rgb(23, 23, 184) 50%);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(151, 230, 33);
-}
-article {
-    column-count: 3; 
-    column-gap: 35px;
-    column-rule: 2px dotted rgb(230, 226, 6);
+body {
+    background-color: rgb(216, 138, 73);
+    font-family: Arial, Helvetica, sans-serif;
 }
