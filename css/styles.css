@@ -1,35 +1,13 @@
-header {
-    background: url(../images/monkey.png);
-    width: 55%;
-    margin-top: 23em;
-}
-
-#body-one {
+body {
     background-color: rgb(216, 138, 73);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#section-one>h2 {
-    color: rgb(155, 206, 53);
-}
-
-section#section-one li {
+section#number-one li {
     line-height: 2em;
-    padding: 5%;
-    background: url(../images/suspiciousdog.png) repeat-y;
 }
 
-#section-one-head {
-    padding: 10%;
-    background: linear-gradient(180deg,rgb(220, 235, 8) 50%, rgb(180, 9, 180) 80%);
-    border: 5em ridge rgb(13, 182, 55);
-}
-
-#section-two-head {
-    padding: 15%;
-    color: rgb(211, 86, 86);
-}
-#footer-one {
+footer {
     font-style: italic;
     line-height: 4em;
 }
