@@ -1,11 +1,16 @@
 body {
-    background-color: rgb(216, 138, 73);
+    background-color: rgb(218, 143, 83);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     font-style: italic;
-    line-height: 4em;
+    color: rgb(248, 250, 252);
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+    border: 0.15em solid rgb(75, 74, 74);
 }
 
 header#homepage img {
@@ -16,8 +21,10 @@ header#homepage img {
 }
 
 div#sections {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    flex-direction: row;   
 }
 
 section#number-one li {
@@ -30,7 +37,7 @@ section#number-one {
 }
 
 section#number-two {
-    margin-left: 1em;
+    margin-left: 0;
     flex-basis: 50%;
 }
 
@@ -40,6 +47,7 @@ section#number-two {
     padding-bottom: 3em;
     margin: auto;
     width: 50%;
+    background-color: aqua;
 }
 .nav_menu ul { 
     list-style-type: none;
