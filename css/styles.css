@@ -22,7 +22,7 @@ header#homepage img {
 
 div#sections {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 20px 20px;
     flex-direction: row;   
 }
@@ -33,12 +33,16 @@ section#number-one li {
 
 section#number-one {
     margin-right: 1em;
-    flex-basis: 50%;
+    flex-basis: 33%;
 }
 
 section#number-two {
     margin-left: 0;
-    flex-basis: 50%;
+    flex-basis: 33%;
+}
+section#number-three {
+    margin-left: 0;
+    flex-basis: 33%;
 }
 
 /* Navigation Menu */
@@ -46,8 +50,7 @@ section#number-two {
 .nav_menu { 
     padding-bottom: 3em;
     margin: auto;
-    width: 50%;
-    background-color: aqua;
+    width: 75%;
 }
 .nav_menu ul { 
     list-style-type: none;
@@ -71,7 +74,7 @@ section#number-two {
 }
 .nav_menu ul li a:hover { 
     background-color: rgb(243, 242, 242);
-    color: var(--color-accent);
+    color: rgb(5, 5, 5)
 }
 
 .nav_menu ul #current {
