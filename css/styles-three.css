@@ -36,7 +36,8 @@ footer {
     border-right: 2px solid rgb(216, 138, 73);
 }
 .nav_menu ul li a:hover { 
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(243, 242, 242);
+    color: rgb(5, 5, 5)
 }
 
 .nav_menu ul #current {
