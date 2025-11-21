@@ -5,36 +5,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
-body h1 {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
+/* Main CSS */
+
+main {
+    flex-grow: 1;
 }
 
-footer {
-    font-style: italic;
-    color: rgb(248, 250, 252);
-    background-color: rgb(0, 0, 0);
-    margin-top: auto;
-    border: 0.15em solid rgb(75, 74, 74);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.title {
     text-align: center;
 }
 
 header#homepage img {
     display: flex;
-    width: 15%;
+    width: 25%;
     min-width: 150px;
     padding-right: 2em;
+    margin: auto;
 }
 
 div#sections {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     grid-gap: 20px 20px;
     flex-direction: row;   
 }
@@ -44,17 +38,38 @@ section#number-one li {
 }
 
 section#number-one {
-    margin-right: 1em;
+    margin: 2em 1em 11em 2em;
     flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 3em 3em;
+    border-radius: 20px;
 }
 
 section#number-two {
-    margin-left: 0;
+    margin: 2em 1em 11em 1em;
     flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 3em 3em;
+    border-radius: 20px;
 }
 section#number-three {
-    margin-left: 0;
+    margin: 2em 2em 11em 1em;
     flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 3em 3em;
+    border-radius: 20px;
+}
+
+/* Footer CSS */
+
+footer {
+    font-style: italic;
+    color: rgb(248, 250, 252);
+    background-color: rgb(0, 0, 0);
+    border: 0.15em solid rgb(75, 74, 74);
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 /* Navigation Menu */
@@ -114,14 +129,24 @@ section#number-three {
     }
 }
 
-/* Sections Media Query */
+/* Main Media Query */
 
-@media only screen and (max-width: 1063px) {
+@media only screen and (max-width: 850px) {
     div#sections {
-    flex-direction: column;
-}
+        display: grid;
+        grid-template: repeat(1, 2fr) / repeat(1, 2fr);
+    }
 
-Section#number-two {
-    margin-left: 0em;
-}
+    section#number-one {
+        margin: 2em 1em 1em 1em;
+    }
+
+    section#number-two {
+        margin: 2em 1em 1em 1em;
+    }
+
+    section#number-three {
+        margin: 2em 1em 1em 1em;
+    }
+
 }
