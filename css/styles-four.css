@@ -1,16 +1,86 @@
 body {
     background-color: rgb(218, 143, 83);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.title {
+    text-align: center;
+}
+
+/* Main CSS */
+
+main {
+    flex-grow: 1;
+}
+
+div#sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-one {
+    margin: 2em 1em 0 2em;
+    flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 3em 3em;
+    border-radius: 20px;
+}
+
+#section-two {
+    margin: 2em 1em 0 1em;
+    flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 3em 3em;
+    border-radius: 20px;
+}
+#section-three {
+    margin: 2em 2em 1em 1em;
+    flex-basis: 33%;
+    background-color: rgb(105, 105, 105);
+    padding: 1em 3em 5em 3em;
+    border-radius: 20px;
+}
+
+/* Images CSS */
+
+img {
+    width: 450px;
+    height: 350px;
+}
+
+#pic-one {
+    display: block;
+    margin: auto;
+}
+
+#pic-two {
+    width: 40%;
+    padding: 0 0 0 1em;
+}
+
+#pic-three {
+    width: 40%;
+    padding: 0 0 0 5em;
+}
+
+/* Return to Top Link CSS */
+
+main>p {
+    text-align: center;
+}
+
+/* Footer CSS */
 
 footer {
     font-style: italic;
     color: rgb(248, 250, 252);
     background-color: rgb(0, 0, 0);
-    margin-top: auto;
     border: 0.15em solid rgb(75, 74, 74);
-    position: fixed;
-    bottom: 0;
+    margin-top: 2em;
     width: 100%;
     text-align: center;
 }
@@ -68,5 +138,17 @@ footer {
     }
     .nav_menu ul li a.lastitem {
         border-bottom: none;
+    }
+}
+
+/* Images Media Query */
+
+@media only screen and (max-width: 677px) {
+    #pic-two {
+        padding: 0;
+    }
+
+    #pic-three {
+        padding: 0;
     }
 }
